@@ -8,7 +8,7 @@
     <!-- Header -->
     <header class="header">
       <a class="header__logo">
-        <img class="header__logo-image" src="img/logo/logo-mobile.png" width="33.32" height="37.61" alt="Кэт энерджи">
+        <img class="header__logo-image" src="img/logo/logo-mobile.png" width="34" height="38" alt="Кэт энерджи">
       </a>
       <div class="header__title">
         <img class="header__title-image" src="img/logo/logo-title.svg" width="101" height="18" alt="Кэт энерджи">
@@ -37,21 +37,21 @@
       <h1 class="visually-hidden">Кэт энерджи</h1>
       <!-- About programs -->
       <section class="main__food-program program">
-        <div class="program__promo">
+        <div class="program__promo promo">
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <button class="promo__button" type="button">Подобрать программу</button>
+          <a class="promo__link" href="form.html">Подобрать программу</a>
         </div>
         <ul class="program__program-options program-options">
           <li class="program-options__weight-lose">
             <h3 class="program-options__title">Похудение</h3>
             <p class="program-options__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <button class="program-options__button" type="button">Каталог slim</button>
+            <a class="program-options__link" href="#">Каталог slim</a>
           </li>
           <li class="program-options__weight-gain">
             <h3 class="program-options__title">Набор массы</h3>
             <p class="program-options__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <button class="program-options__button" type="button">Каталог pro</button>
+            <a class="program-options__link" href="#">Каталог pro</a>
           </li>
         </ul>
         <div class="program__about-programs about-programs">
@@ -79,35 +79,34 @@
         <div class="example__statistics statistics">
           <dl class="statistics__list">
             <div class="statistics__item">
-              <dt class="statistics__number">5 КГ</dt>
-              <dd class="statistics__description">снижение веса</dd>
+              <dt class="statistics__value">5 КГ</dt>
+              <dd class="statistics__parameter">снижение веса</dd>
             </div>
             <div class="statistics__item">
-              <dt class="statistics__number">60 ДНЕЙ</dt>
-              <dd class="statistics__description">затрачено времени</dd>
+              <dt class="statistics__value">60 ДНЕЙ</dt>
+              <dd class="statistics__parameter">затрачено времени</dd>
             </div>
           </dl>
           <p class="statistics__text">Затраты на питание: 15 000 РУБ.</p>
         </div>
         <div class="example__slider slider">
-          <img class="slider__image" src="img/slider/cat-fat.png" height="232" width="auto" alt="Было">
-          <img class="slider__image" src="img/slider/cat-skinny.png" height="232" width="auto" alt="Стало">
+          <img class="slider__image" src="img/slider/cat-fat.png" width="280" height="232" alt="Было">
+          <img class="visually-hidden" src="img/slider/cat-skinny.png" width="243" height="232" alt="Стало">
           <div class="slider__scale">
-            <span class="slider__scale-text">Было</span>
-            <input type="range">
-            <span class="slider__scale-text">Стало</span>
+            <button class="slider__scale-button" type="button">Было</button>
+            <label class="visually-hidden" for="slider-input">Выбрать положение</label>
+            <input class="slider__scale-input" type="range" id="slider-input">
+            <button class="slider__scale-button" type="button">Стало</button>
           </div>
         </div>
       </section>
     </main>
     <!-- Footer -->
-    <footer>
-      <div class="footer-wrapper">
-        <div class="footer__invitation">
-          <p class="footer__invitation-text">Приглашаем к сотрудничеству дилеров!</p>
-        </div>
-        <div class="footer__address">
-          <address class="footer__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__contacts">
+          <p class="footer__contacts-invitation">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="footer__contacts-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <div class="footer__map">
           <img class="footer__map-image" src="img/location.jpg" width="320" height="362" alt="Как нас найти">
@@ -115,25 +114,21 @@
         <div class="footer__logo">
           <img class="footer__logo-image" src="img/logo/logo-title.svg" width="128" height="24" alt="Кэт энерджи">
         </div>
-        <div class="footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">Мы ВКонтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__copyright copyright">
-          <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__logo-html" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/logo/logo-html.svg" width="27" height="34" alt="HTML Academy">
-          </a>
-        </div>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">Мы ВКонтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+        </ul>
+        <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+          <img src="img/logo/logo-html.svg" width="27" height="34" alt="HTML Academy">
+        </a>
       </div>
     </footer>
   </body>
