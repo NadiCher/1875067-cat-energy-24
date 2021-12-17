@@ -1,0 +1,20 @@
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: 7px auto;
+  border: none;
+  width: 280px;
+  height: 40px;
+  font-family: "Oswald regular", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-green;
+}
+
+.button--show-all {
+  color: $special-dark-grey;
+  background-color: $basic-grey;
+}

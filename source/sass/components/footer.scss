@@ -1,0 +1,58 @@
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $basic-grey;
+}
+
+.footer__contacts {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 26px 20px;
+  background-color: #ffffff;
+}
+
+.footer__contacts-invitation {
+  font-family: "Oswald regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: auto;
+}
+
+.footer__contacts-address {
+  line-height: 20px;
+  font-style: normal;
+}
+
+.footer__map {
+  width: 100%;
+  height: 362px;
+  margin-bottom: 39px;
+}
+
+.footer__map iframe {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.footer__logo {
+  height: 24px;
+  margin-bottom: 52px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px 22px;
+  text-decoration: none;
+  color: $special-dark-grey;
+  font-size: 16px;
+}

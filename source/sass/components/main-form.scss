@@ -1,0 +1,25 @@
+.main-form {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 20px 32px;
+}
+
+.main-form__title {
+  font-family: "Oswald regular", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0 0 37px;
+}
+
+.main-form__text {
+  font-family: "Oswald regular", "Arial", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0 0 39px;
+}
+
+.main-form__text-required {
+  line-height: 16px;
+  margin: 21px auto 0;
+}

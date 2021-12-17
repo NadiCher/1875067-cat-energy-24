@@ -1,0 +1,17 @@
+.social {
+  list-style-type: none;
+  margin: 0 auto 43px;
+  padding: 0;
+  display: flex;
+  width: 130px;
+  height: 22px;
+  justify-content: space-between;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+  width: 23px;
+}

@@ -1,0 +1,48 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../img/background-cat-mobile.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: $basic-white;
+  min-height: 480px;
+  padding-top: 27px;
+  margin-bottom: 20px;
+}
+
+.promo__title {
+  margin: 0;
+  font-family: "Oswald regular", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.promo__slogan {
+  font-family: "Oswald regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.promo__link {
+  display: block;
+  width: 280px;
+  height: 40px;
+  font-family: "Oswald regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic-white;
+  background-color: $basic-green;
+  margin-top: auto;
+  padding: 13px 0;
+}
