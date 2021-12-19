@@ -5,9 +5,10 @@
 }
 
 .about-programs__title {
-  font-family: "Oswald regular", "Arial", sans-serif;
+  font-family: $font-title;
   font-size: 36px;
-  line-height: 40px;
-  font-weight: normal;
+  line-height: 1.11;
+  font-weight: 400;
+  color: $color-title-main;
   margin: 0 0 40px 0;
 }

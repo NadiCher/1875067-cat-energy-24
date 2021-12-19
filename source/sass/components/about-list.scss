@@ -11,33 +11,32 @@
 .about-list__item {
   display: flex;
   align-items: center;
+
+  &--healthy {
+    --bgi: url("../img/about-programs/about-programs-healthy.svg");
+  }
+
+  &--powder {
+    --bgi: url("../img/about-programs/about-programs-powder.svg");
+  }
+
+  &--eating {
+    --bgi: url("../img/about-programs/about-programs-eating.svg");
+  }
+
+  &--time {
+    --bgi: url("../img/about-programs/about-programs-time.svg");
+  }
 }
 
 .about-list__item::before {
   display: inline-block;
   content: "";
-  background-repeat: no-repeat;
-  background-position: center;
+  background: var(--bgi) no-repeat center;
   width: 60px;
   height: 60px;
   margin-right: 20px;
   flex-shrink: 0;
-}
-
-.about-list__item--1::before {
-  background-image: url("../img/about-programs/about-programs-icon-1.svg");
-}
-
-.about-list__item--2::before {
-  background-image: url("../img/about-programs/about-programs-icon-2.svg");
-}
-
-.about-list__item--3::before {
-  background-image: url("../img/about-programs/about-programs-icon-3.svg");
-}
-
-.about-list__item--4::before {
-  background-image: url("../img/about-programs/about-programs-icon-4.svg");
 }
 
 .about-list__item p {

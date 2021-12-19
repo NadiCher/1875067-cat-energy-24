@@ -4,11 +4,11 @@
 
 .site-list__item a {
   text-decoration: none;
-  color: inherit;
-  font-family: "Oswald medium", "Arial", sans-serif;
+  color: $color-text-dark;
+  font-family: $font-link;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 1;
   text-transform: uppercase;
 }

@@ -1,5 +1,46 @@
+// Colours
 $basic-white: #ffffff;
-$basic-green: #68b738;
 $basic-grey: #f2f2f2;
+$light-grey: #eaeaea;
+$very-light-grey: #e7e7e7;
 $special-grey: #cdcdcd;
 $special-dark-grey: #444444;
+$special-dark-grey-2: #222222;
+$almost-black: #111111;
+$black: #000000;
+$basic-green: #68b738;
+
+$color-text-main: $special-dark-grey;
+$color-text-second: $almost-black;
+$color-text-light: $basic-white;
+$color-text-dark: $black;
+$color-title-main: $black;
+$color-title-second: $special-dark-grey;
+$color-title-catalog: $special-dark-grey-2;
+$color-title-light: $basic-white;
+$color-button-bg: $basic-green;
+$color-button-text: $basic-white;
+$color-button-second-bg: $basic-grey;
+$color-button-second-text: $special-dark-grey;
+$color-link: $black;
+$color-link-second: $special-dark-grey;
+$color-border: $special-grey;
+$color-input: $very-light-grey;
+$color-form-label: $special-dark-grey;
+$color-label: $special-dark-grey-2;
+$color-label-second: $black;
+$color-bg-main: $basic-grey;
+$color-bg-light: $basic-white;
+$color-bg-example: $light-grey;
+$color-bg-img: $basic-green;
+
+
+// Fonts
+$font-main: "Arial", sans-serif;
+$font-second: "Oswald", "Arial", sans-serif;
+
+$font-title: $font-second;
+$font-button: $font-second;
+$font-input: $font-second;
+$font-label: $font-second;
+$font-link: $font-second;

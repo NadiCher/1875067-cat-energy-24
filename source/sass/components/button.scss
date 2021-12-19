@@ -1,20 +1,20 @@
 .button {
   display: block;
   margin: 0 auto;
-  padding: 7px auto;
+  padding: 10px;
   border: none;
   width: 280px;
-  height: 40px;
-  font-family: "Oswald regular", "Arial", sans-serif;
+  min-height: 40px;
+  font-family: $font-button;
   font-weight: normal;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   text-transform: uppercase;
-  color: $basic-white;
-  background-color: $basic-green;
+  color: $color-button-text;
+  background-color: $color-button-bg;
 }
 
 .button--show-all {
-  color: $special-dark-grey;
-  background-color: $basic-grey;
+  color: $color-button-second-text;
+  background-color: $color-button-second-bg;
 }

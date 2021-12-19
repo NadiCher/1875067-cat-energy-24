@@ -5,10 +5,11 @@
 }
 
 .main-catalog__main-title {
-  font-family: "Oswald regular", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: $font-title;
+  font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
+  color: $color-title-main;
   margin: 0 0 49px;
 }
 
@@ -18,34 +19,35 @@
 }
 
 .main-catalog__text-big {
-  font-family: "Oswald regular", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: $font-second;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   text-align: center;
   text-transform: uppercase;
-  color: #111111;
+  color: $color-text-second;
   margin: 0 0 8px;
 }
 
 .main-catalog__text-small {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   text-align: center;
-  color: $special-dark-grey;
+  color: $color-text-main;
   margin: 0 0 21px;
 }
 
 .main-catalog__title {
-  font-family: "Oswald regular", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: $font-title;
+  font-weight: 400;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
+  color: $color-title-main;
   margin: 0 0 50px;
 }
 
 .main-catalog__action {
-  background-color: #68b738;
+  background-color: $color-bg-img;
   background-image: url("../img/catalog/catalog-action.jpg");
   background-repeat: no-repeat;
   width: 280px;
@@ -55,8 +57,8 @@
 
 .main-catalog__action-text {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   text-align: center;
-  color: $basic-white;
+  color: $color-text-light;
   margin-top: 187px;
 }

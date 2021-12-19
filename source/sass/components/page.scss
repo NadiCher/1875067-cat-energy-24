@@ -1,18 +1,10 @@
 .page {
   height: 100%;
   min-width: 320px;
-  font-family: "Arial", sans-serif;
+  font-family: $font-main;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-}
-
-.page-body {
-  margin: 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  line-height: 1.29;
+  color: $color-text-main;
 }

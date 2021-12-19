@@ -5,42 +5,42 @@
 }
 
 .statistics__item {
-  width: 124px;
+  min-width: 124px;
   height: 56px;
   position: relative;
-}
-
-.statistics__item::before {
-  position: absolute;
-  content: "";
-  background-image: url("../img/example-frame.svg");
-  width: 124px;
-  height: 56px;
+  border: 1px solid $color-border;
+  border-radius: 3px;
+  text-align: center;
 }
 
 .statistics__value {
-  font-family: "Oswald regular", "Arial", sans-serif;
+  font-family: $font-second;
   font-size: 24px;
-  line-height: 24px;
-  font-weight: normal;
+  line-height: 1;
+  font-weight: 400;
   text-transform: uppercase;
-  text-align: center;
+  color: $color-text-dark;
   margin: 13px 0 8px 0;
 }
 
 .statistics__parameter {
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1;
   text-align: center;
-  margin: 0;
+  padding: 0 15px;
+  margin: 0 20px;
+  display: inline-block;
+  min-width: 80px;
+  background-color: $color-bg-example;
 }
 
 .statistics__text {
-  font-family: "Oswald regular", "Arial", sans-serif;
+  font-family: $font-second;
   font-size: 14px;
-  line-height: 20px;
-  font-weight: normal;
+  line-height: 1.43;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  color: $color-text-dark;
   margin-bottom: 40px;
 }

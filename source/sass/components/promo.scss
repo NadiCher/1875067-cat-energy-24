@@ -5,7 +5,7 @@
   background-image: url("../img/background-cat-mobile.png");
   background-position: center top;
   background-repeat: no-repeat;
-  color: $basic-white;
+  color: $color-text-light;
   min-height: 480px;
   padding-top: 27px;
   margin-bottom: 20px;
@@ -13,19 +13,19 @@
 
 .promo__title {
   margin: 0;
-  font-family: "Oswald regular", "Arial", sans-serif;
+  font-family: $font-title;
   font-size: 36px;
-  line-height: 36px;
-  font-weight: normal;
+  line-height: 1;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 25px;
 }
 
 .promo__slogan {
-  font-family: "Oswald regular", "Arial", sans-serif;
+  font-family: $font-second;
   font-size: 14px;
-  line-height: 14px;
-  font-weight: normal;
+  line-height: 1;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
@@ -35,14 +35,14 @@
   display: block;
   width: 280px;
   height: 40px;
-  font-family: "Oswald regular", "Arial", sans-serif;
+  font-family: $font-link;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: $basic-white;
-  background-color: $basic-green;
+  color: $color-button-text;
+  background-color: $color-button-bg;
   margin-top: auto;
   padding: 13px 0;
 }

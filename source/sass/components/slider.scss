@@ -9,11 +9,12 @@
 }
 
 .slider__scale-button {
-  font-family: "Oswald regular", "Arial", sans-serif;
+  font-family: $font-button;
   font-size: 16px;
-  line-height: 30px;
-  font-weight: normal;
+  line-height: 1.88;
+  font-weight: 400;
   text-transform: uppercase;
+  color: $color-text-dark;
   border: none;
-  background-color: #eaeaea;
+  background-color: $color-bg-example;
 }

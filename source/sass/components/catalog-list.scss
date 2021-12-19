@@ -19,7 +19,7 @@
   grid-template-rows: 41px 1fr;
   min-height: 112px;
   text-decoration: none;
-  color: $special-dark-grey;
+  color: $color-link-second;
 }
 
 .catalog-list__image-container {
@@ -28,11 +28,12 @@
 }
 
 .catalog-list__title {
-  font-family: "Oswald regular", "Arial", sans-serif;
-  font-weight: normal;
+  font-family: $font-title;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   text-transform: uppercase;
+  color: $color-title-catalog;
   margin: 0;
 }
 
@@ -40,7 +41,7 @@
   border-collapse: collapse;
   font-weight: normal;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
 }
 
 .catalog-list__table-value {

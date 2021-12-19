@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $basic-grey;
+  background-color: $color-bg-main;
 }
 
 .footer__contacts {
@@ -10,21 +10,22 @@
   align-items: center;
   width: 100%;
   padding: 26px 20px;
-  background-color: #ffffff;
+  background-color: $color-bg-light;
 }
 
 .footer__contacts-invitation {
-  font-family: "Oswald regular", "Arial", sans-serif;
+  font-family: $font-second;
   font-size: 16px;
-  line-height: 20px;
-  font-weight: normal;
+  line-height: 1.25;
+  font-weight: 400;
   text-transform: uppercase;
+  color: $color-text-dark;
   margin: 0;
   margin-right: auto;
 }
 
 .footer__contacts-address {
-  line-height: 20px;
+  line-height: 1.43;
   font-style: normal;
 }
 
@@ -53,6 +54,7 @@
   width: 100%;
   padding: 0 20px 22px;
   text-decoration: none;
-  color: $special-dark-grey;
+  color: $color-link-second;
   font-size: 16px;
+  line-height: 1.13;
 }
