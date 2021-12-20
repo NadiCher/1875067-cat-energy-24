@@ -1,0 +1,14 @@
+.about-programs {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.about-programs__title {
+  font-family: $font-title;
+  font-size: 36px;
+  line-height: 1.11;
+  font-weight: 400;
+  color: $color-title-main;
+  margin: 0 0 40px 0;
+}

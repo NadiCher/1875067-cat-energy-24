@@ -1,0 +1,44 @@
+.about-list {
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 50px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-list__item {
+  display: flex;
+  align-items: center;
+
+  &--healthy {
+    --bgi: url("../img/about-programs/about-programs-healthy.svg");
+  }
+
+  &--powder {
+    --bgi: url("../img/about-programs/about-programs-powder.svg");
+  }
+
+  &--eating {
+    --bgi: url("../img/about-programs/about-programs-eating.svg");
+  }
+
+  &--time {
+    --bgi: url("../img/about-programs/about-programs-time.svg");
+  }
+}
+
+.about-list__item::before {
+  display: inline-block;
+  content: "";
+  background: var(--bgi) no-repeat center;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.about-list__item p {
+  margin: 0;
+}

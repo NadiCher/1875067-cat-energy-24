@@ -1,0 +1,28 @@
+.main-form {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 20px 32px;
+}
+
+.main-form__title {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  color: $color-title-main;
+  margin: 0 0 37px;
+}
+
+.main-form__text {
+  font-family: $font-second;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-text-dark;
+  margin: 0 0 39px;
+}
+
+.main-form__text-required {
+  line-height: 1.14;
+  color: $color-text-dark;
+  margin: 21px auto 0;
+}

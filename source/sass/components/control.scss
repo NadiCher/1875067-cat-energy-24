@@ -1,0 +1,17 @@
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.control__label {
+  font-family: $font-label;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.13;
+  text-transform: uppercase;
+  color: $color-label;
+}
+
+.control__label--extra {
+  color: $color-text-dark;
+}
