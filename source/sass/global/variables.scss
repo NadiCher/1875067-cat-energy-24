@@ -24,6 +24,7 @@ $color-button-second-bg: $basic-grey;
 $color-button-second-text: $special-dark-grey;
 $color-link: $black;
 $color-link-second: $special-dark-grey;
+$color-link-light: $basic-white;
 $color-border: $special-grey;
 $color-input: $very-light-grey;
 $color-form-label: $special-dark-grey;
@@ -44,3 +45,8 @@ $font-button: $font-second;
 $font-input: $font-second;
 $font-label: $font-second;
 $font-link: $font-second;
+
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;

@@ -4,19 +4,40 @@
   justify-content: space-between;
   gap: 20px;
   list-style-type: none;
-  margin: 0 20px 20px 20px;
+  margin: 0 20px 20px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 45px;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+    margin: 0 110px 78px;
+  }
 }
 
 .program-options__weight-lose,
 .program-options__weight-gain {
   background-color: $color-bg-main;
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 315px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 50px 55px 52px;
+    min-width: 570px;
+  }
 }
 
 .program-options__title {
   display: flex;
   align-items: center;
+  min-height: 53px;
   font-family: $font-title;
   font-size: 24px;
   line-height: 1.54;
@@ -24,6 +45,25 @@
   text-transform: uppercase;
   color: $color-title-main;
   margin: 0 0 22px 0;
+  padding-left: 69px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    font-size: 36px;
+    line-height: 1;
+    min-height: 36px;
+    width: auto;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 40px 162px;
+    min-height: 106px;
+    align-items: center;
+    width: auto;
+  }
 }
 
 .program-options__title::before {
@@ -31,6 +71,9 @@
   content: "";
   background-repeat: no-repeat;
   background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .program-options__title--weight-lose::before {
@@ -38,18 +81,66 @@
   width: 50px;
   height: 53px;
   margin-right: 19px;
+
+  @media (min-width: $tablet-width) {
+    right: -254px;
+    top: 4px;
+    background-size: 200px 211px;
+    width: 200px;
+    height: 211px;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -162px;
+    top: 0;
+    background-size: 100px 106px;
+    width: 100px;
+    height: 106px;
+    margin: 0 62px 0 0;
+  }
 }
 
 .program-options__title--weight-gain::before {
   background-image: url("../img/cat-weight-gain.svg");
   width: 67px;
   height: 50px;
-  margin-right: 11px;
   margin-left: -9px;
+  margin-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    right: -285px;
+    top: 16px;
+    background-size: 268px 200px;
+    width: 268px;
+    height: 200px;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -181px;
+    top: 5px;
+    background-size: 134px 100px;
+    width: 134px;
+    height: 100px;
+    margin: 0 47px 0 0;
+  }
 }
 
 .program-options__description {
   margin: 0 0 38px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .program-options__link {
@@ -61,4 +152,9 @@
   text-decoration: none;
   color: $color-link;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }

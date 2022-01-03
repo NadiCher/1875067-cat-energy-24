@@ -1,7 +1,15 @@
 .about-programs {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 25px;
+  }
 }
 
 .about-programs__title {
@@ -11,4 +19,10 @@
   font-weight: 400;
   color: $color-title-main;
   margin: 0 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
 }

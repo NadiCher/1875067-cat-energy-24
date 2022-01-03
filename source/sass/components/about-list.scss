@@ -3,9 +3,18 @@
   padding: 0;
   padding-bottom: 50px;
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .about-list__item {
@@ -26,6 +35,11 @@
 
   &--time {
     --bgi: url("../img/about-programs/about-programs-time.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
 

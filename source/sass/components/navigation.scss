@@ -1,0 +1,21 @@
+.navigation {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__toggle {
+    display: none;
+  }
+}

@@ -4,4 +4,46 @@
   align-items: center;
   margin: 10px 20px 17px;
   min-height: 65px;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-end;
+    min-height: 76px;
+    margin: 0 30px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 112px;
+    margin: 0 110px 110px;
+  }
+}
+
+.header__logo,
+.header__title {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__logo--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__logo--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
