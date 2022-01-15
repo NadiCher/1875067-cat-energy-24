@@ -1,16 +1,11 @@
 .example {
   background-color: $color-bg-example;
-  padding: 25px 20px 40px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 30px 55px;
     background: linear-gradient($color-bg-light 0, $color-bg-light 620px, $color-bg-example 620px);
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    gap: 193px;
-    padding: 0 110px 75px;
     background: linear-gradient($color-bg-light 0, $color-bg-light 180px, $color-bg-example 180px);
   }
 }
@@ -51,5 +46,25 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 70px;
+  }
+}
+
+.example__viewport-container {
+  padding: 25px 20px 40px 20px;
+
+  @include mobile;
+
+  @media (min-width: $tablet-width) {
+    @include tablet;
+
+    padding: 40px 30px 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop;
+
+    display: flex;
+    gap: 193px;
+    padding: 0 110px 65px;
   }
 }

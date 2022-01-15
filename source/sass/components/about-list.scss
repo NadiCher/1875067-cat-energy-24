@@ -51,6 +51,12 @@
   height: 60px;
   margin-right: 20px;
   flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    background-size: 80px 80px;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .about-list__item p {

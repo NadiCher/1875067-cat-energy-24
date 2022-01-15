@@ -1,11 +1,11 @@
-.main {
-  flex-grow: 1;
+.program {
+  @include mobile;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
+    @include tablet;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 111px;
+    @include desktop;
   }
 }

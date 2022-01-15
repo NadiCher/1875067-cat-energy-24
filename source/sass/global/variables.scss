@@ -50,3 +50,19 @@ $font-link: $font-second;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width-only: 767px;
+
+// Mixins
+@mixin mobile {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+@mixin tablet {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+@mixin desktop {
+  max-width: 1440px;
+  margin: 0 auto;
+}
