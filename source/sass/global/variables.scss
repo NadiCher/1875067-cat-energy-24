@@ -53,16 +53,16 @@ $mobile-width-only: 767px;
 
 // Mixins
 @mixin mobile {
-  max-width: 320px;
+  width: 280px;
   margin: 0 auto;
 }
 
 @mixin tablet {
-  max-width: 768px;
+  width: 708px;
   margin: 0 auto;
 }
 
 @mixin desktop {
-  max-width: 1440px;
+  width: 1220px;
   margin: 0 auto;
 }

@@ -1,26 +1,37 @@
 .promo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url("../img/background-cat-mobile.png");
+  background-image: url("../img/background-cat-mobile.png"), linear-gradient($color-bg-img 0, $color-bg-img 302px, $color-bg-light 302px);
   background-position: center top;
   background-repeat: no-repeat;
   color: $color-text-light;
-  min-height: 480px;
-  padding-top: 27px;
-  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    background-color: $color-bg-light;
+  }
+}
+
+.promo__wrapper {
+  @include mobile;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-text-light;
+  min-height: 500px;
+  padding: 27px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    @include tablet;
+
     align-items: flex-start;
     min-height: 810px;
-    background-color: $color-bg-light;
-    padding: 0 30px;
-    margin-bottom: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
+    @include desktop;
+
     min-height: 470px;
-    padding-left: 190px;
+    padding-left: 80px;
     margin-bottom: 82px;
   }
 }

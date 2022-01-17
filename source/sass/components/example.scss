@@ -2,10 +2,12 @@
   background-color: $color-bg-example;
 
   @media (min-width: $tablet-width) {
+    min-height: 1077px;
     background: linear-gradient($color-bg-light 0, $color-bg-light 620px, $color-bg-example 620px);
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 641px;
     background: linear-gradient($color-bg-light 0, $color-bg-light 180px, $color-bg-example 180px);
   }
 }
@@ -50,14 +52,14 @@
 }
 
 .example__viewport-container {
-  padding: 25px 20px 40px 20px;
-
   @include mobile;
+
+  padding: 25px 0 40px 0;
 
   @media (min-width: $tablet-width) {
     @include tablet;
 
-    padding: 40px 30px 56px;
+    padding: 40px 0 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,6 +67,7 @@
 
     display: flex;
     gap: 193px;
-    padding: 0 110px 65px;
+    padding-top: 0;
+    padding-bottom: 65px;
   }
 }

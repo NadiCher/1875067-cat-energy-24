@@ -6,35 +6,42 @@
 }
 
 .footer__wrapper-contacts {
-  width: 100%;
+  @include mobile;
+
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
+    @include tablet;
+
+    padding: 0;
+  }
 
   @media (min-width: $desktop-width) {
     @include desktop;
 
     position: relative;
     height: 0;
+    padding: 0;
   }
 }
 
 .footer__contacts {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 26px 20px;
-  background-color: $color-bg-light;
-
   @include mobile;
 
-  @media (min-width: $tablet-width) {
-    padding: 60px 70px 60px;
+  display: flex;
+  align-items: center;
+  background-color: $color-bg-light;
 
+  @media (min-width: $tablet-width) {
     @include tablet;
+
+    padding: 60px 40px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 0;
     width: 565px;
     height: 198px;
     padding: 56px 80px;
@@ -87,26 +94,25 @@
 }
 
 .footer__bottom {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-
   @include mobile;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media (min-width: $tablet-width) {
+    @include tablet;
+
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px 55px;
-
-    @include tablet;
+    padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 58px;
-
     @include desktop;
+
+    padding-bottom: 58px;
   }
 }
 
@@ -124,7 +130,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 20px 22px;
+  padding: 0 0 22px;
   text-decoration: none;
   color: $color-link-second;
   font-size: 16px;
