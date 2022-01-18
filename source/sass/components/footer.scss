@@ -2,15 +2,50 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $color-bg-main;
+  background: linear-gradient($color-bg-light 0, $color-bg-light 112px, $color-bg-main);
+}
+
+.footer__wrapper-contacts {
+  @include mobile;
+
+  padding: 26px 0;
+
+  @media (min-width: $tablet-width) {
+    @include tablet;
+
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop;
+
+    position: relative;
+    height: 0;
+    padding: 0;
+  }
 }
 
 .footer__contacts {
+  @include mobile;
+
   display: flex;
   align-items: center;
-  width: 100%;
-  padding: 26px 20px;
   background-color: $color-bg-light;
+
+  @media (min-width: $tablet-width) {
+    @include tablet;
+
+    padding: 60px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 565px;
+    height: 198px;
+    padding: 56px 80px;
+  }
 }
 
 .footer__contacts-invitation {
@@ -22,17 +57,33 @@
   color: $color-text-dark;
   margin: 0;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.3;
+  }
 }
 
 .footer__contacts-address {
   line-height: 1.43;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+  }
 }
 
 .footer__map {
   width: 100%;
   height: 362px;
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    margin-bottom: 58px;
+  }
 }
 
 .footer__map iframe {
@@ -42,9 +93,36 @@
   height: 100%;
 }
 
+.footer__bottom {
+  @include mobile;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    @include tablet;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop;
+
+    padding-bottom: 58px;
+  }
+}
+
 .footer__logo {
   height: 24px;
   margin-bottom: 52px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .footer__copyright {
@@ -52,9 +130,15 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 20px 22px;
+  padding: 0 0 22px;
   text-decoration: none;
   color: $color-link-second;
   font-size: 16px;
   line-height: 1.13;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    height: 34px;
+    padding: 0;
+  }
 }

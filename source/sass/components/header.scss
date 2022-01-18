@@ -1,7 +1,57 @@
 .header {
+  @include mobile;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 20px 17px;
+  padding: 10px 0 17px;
   min-height: 65px;
+
+  @media (min-width: $tablet-width) {
+    @include tablet;
+
+    align-items: flex-end;
+    min-height: 76px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop;
+
+    min-height: 112px;
+    padding: 0;
+  }
+}
+
+.header__logo,
+.header__title {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__logo--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-right: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__logo--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-right: 540px;
+  }
 }

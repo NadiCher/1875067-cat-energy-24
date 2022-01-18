@@ -1,7 +1,21 @@
 .about-programs {
+  @include mobile;
+
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    @include tablet;
+
+    padding-right: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop;
+
+    padding-right: 0;
+    padding-bottom: 25px;
+  }
 }
 
 .about-programs__title {
@@ -11,4 +25,10 @@
   font-weight: 400;
   color: $color-title-main;
   margin: 0 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
 }
