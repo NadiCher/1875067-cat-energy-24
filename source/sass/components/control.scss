@@ -10,6 +10,11 @@
   line-height: 1.13;
   text-transform: uppercase;
   color: $color-label;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .control__label--extra {

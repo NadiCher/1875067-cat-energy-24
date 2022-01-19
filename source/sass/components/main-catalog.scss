@@ -1,7 +1,20 @@
 .main-catalog {
+  @include mobile;
   display: flex;
   flex-direction: column;
-  padding: 27px 20px 35px;
+  padding: 27px 0 35px;
+
+  @media (min-width: $tablet-width) {
+    @include tablet;
+
+    padding: 60px 0 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop;
+
+    padding: 70px 0 86px;
+  }
 }
 
 .main-catalog__main-title {
@@ -11,6 +24,11 @@
   line-height: 1;
   color: $color-title-main;
   margin: 0 0 49px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    margin: 0 0 82px;
+  }
 }
 
 .main-catalog__show-more {
@@ -18,23 +36,11 @@
   margin-bottom: 50px;
 }
 
-.main-catalog__text-big {
-  font-family: $font-second;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  text-align: center;
-  text-transform: uppercase;
-  color: $color-text-second;
-  margin: 0 0 8px;
-}
-
-.main-catalog__text-small {
-  font-size: 12px;
-  line-height: 1.33;
-  text-align: center;
-  color: $color-text-main;
-  margin: 0 0 21px;
+.main-catalog__extra-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 79px;
+  }
 }
 
 .main-catalog__title {
@@ -44,15 +50,38 @@
   line-height: 1;
   color: $color-title-main;
   margin: 0 0 50px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    margin-left: 37px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .main-catalog__action {
+  @include mobile;
+
   background-color: $color-bg-img;
   background-image: url("../img/catalog/catalog-action.jpg");
   background-repeat: no-repeat;
-  width: 280px;
-  height: 290px;
-  margin: 0 auto;
+  min-height: 290px;
+  padding-top: 187px;
+
+  @media (min-width: $tablet-width) {
+    @include tablet;
+
+    padding: 71px 120px 0 422px;
+    min-height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 289px;
+    padding: 185px 41px 0;
+  }
 }
 
 .main-catalog__action-text {
@@ -60,5 +89,13 @@
   line-height: 1.25;
   text-align: center;
   color: $color-text-light;
-  margin-top: 187px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+  text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }
