@@ -4,11 +4,39 @@
   margin: 0 0 54px;
   display: grid;
   row-gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 0;
+    border-top: 1px solid $color-border;
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 896px;
+  }
 }
 
 .extra-list__item {
   display: grid;
-  row-gap: 15px;
+  row-gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    padding: 25px 38px 28px;
+    border: 1px solid $color-border;
+    border-top: none;
+    row-gap: 25px;
+    align-items: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 325px 326px 244px;
+    padding: 15px 0 16px;
+    border-right: none;
+    border-left: none;
+    align-items: center;
+  }
 }
 
 .extra-list__title {
@@ -19,6 +47,10 @@
   text-transform: uppercase;
   color: $color-title-catalog;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .extra-list__table {
@@ -26,8 +58,26 @@
   font-weight: normal;
   line-height: 1;
   color: $color-text-main;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .extra-list__table-price {
-  text-align: end;
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    width: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 82px;
+    text-align: left;
+  }
 }
