@@ -3,12 +3,15 @@ $basic-white: #ffffff;
 $basic-grey: #f2f2f2;
 $light-grey: #eaeaea;
 $very-light-grey: #e7e7e7;
+$one-more-grey: #e6e6e6;
+$darker-grey: #d9d9d9;
 $special-grey: #cdcdcd;
 $special-dark-grey: #444444;
 $special-dark-grey-2: #222222;
 $almost-black: #111111;
 $black: #000000;
 $basic-green: #68b738;
+$transparent-grey: #00000029;
 
 $color-text-main: $special-dark-grey;
 $color-text-second: $almost-black;
@@ -26,6 +29,8 @@ $color-link: $black;
 $color-link-second: $special-dark-grey;
 $color-link-light: $basic-white;
 $color-border: $special-grey;
+$color-border-divider:$one-more-grey;
+$color-border-dark: $darker-grey;
 $color-input: $very-light-grey;
 $color-form-label: $special-dark-grey;
 $color-label: $special-dark-grey-2;
@@ -45,6 +50,7 @@ $font-button: $font-second;
 $font-input: $font-second;
 $font-label: $font-second;
 $font-link: $font-second;
+$font-bg: $font-second;
 
 // Viewports
 $tablet-width: 768px;

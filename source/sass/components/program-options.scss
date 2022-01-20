@@ -28,7 +28,7 @@
 .program-options__weight-lose,
 .program-options__weight-gain {
   background-color: $color-bg-main;
-  padding: 20px;
+  padding: 21px 20px 18px;
   min-height: 266px;
 
   @media (min-width: $tablet-width) {
@@ -37,7 +37,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px 50px 55px 52px;
+    padding: 42px 50px 55px 52px;
     min-width: 570px;
     min-height: 374px;
   }
@@ -54,7 +54,7 @@
   text-transform: uppercase;
   color: $color-title-main;
   margin: 0 0 22px 0;
-  padding-left: 69px;
+  padding-left: 71px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -64,11 +64,11 @@
     min-height: 36px;
     width: auto;
     padding: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 40px 162px;
+    margin: 0 0 39px 162px;
     min-height: 106px;
     align-items: center;
     width: auto;
@@ -89,10 +89,10 @@
   background-image: url("../img/cat-weight-lose.svg");
   width: 50px;
   height: 53px;
-  margin-right: 19px;
+  margin-left: 2px;
 
   @media (min-width: $tablet-width) {
-    right: -254px;
+    right: -252px;
     top: 4px;
     background-size: 200px 211px;
     width: 200px;
@@ -115,12 +115,12 @@
   background-image: url("../img/cat-weight-gain.svg");
   width: 67px;
   height: 50px;
-  margin-left: -9px;
+  margin-left: -7px;
   margin-top: 3px;
 
   @media (min-width: $tablet-width) {
     right: -285px;
-    top: 16px;
+    top: 15px;
     background-size: 268px 200px;
     width: 268px;
     height: 200px;
@@ -130,7 +130,7 @@
 
   @media (min-width: $desktop-width) {
     left: -181px;
-    top: 5px;
+    top: 4px;
     background-size: 134px 100px;
     width: 134px;
     height: 100px;
@@ -139,16 +139,19 @@
 }
 
 .program-options__description {
-  margin: 0 0 42px 0;
+  margin: 0 0 19px 0;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $color-border-dark;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 52px;
+    margin-bottom: 29px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 5px;
   }
 }
 
@@ -160,7 +163,30 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $color-link;
-  margin: 0;
+  margin: 19px 0 0 -1px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 100px;
+    background-image: url("../../img/icon-arrow.png");
+    background-repeat: no-repeat;
+    background-size: 24px 12px;
+    width: 24px;
+    height: 12px;
+
+    @media (min-width: $tablet-width) {
+      top: 9px;
+      left: 133px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 9px;
+      left: 136px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
