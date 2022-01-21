@@ -1,4 +1,5 @@
 .about-list {
+  counter-reset: list;
   list-style-type: none;
   padding: 0;
   padding-bottom: 49px;
@@ -67,18 +68,10 @@
   }
 }
 
-.about-list__item p {
-  margin: 0;
-  z-index: 2;
-}
+.about-list__item::after {
+  counter-increment: list;
+  content: counter(list);
 
-.about-list__item br {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-}
-
-.about-list__item-number {
   @media (max-width: $mobile-width-only) {
     display: none;
   }
@@ -92,5 +85,16 @@
     line-height: 1;
     color: $color-bg-main;
     z-index: 1;
+  }
+}
+
+.about-list__item p {
+  margin: 0;
+  z-index: 2;
+}
+
+.about-list__item br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
