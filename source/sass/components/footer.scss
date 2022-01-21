@@ -38,6 +38,7 @@
 
   display: flex;
   align-items: center;
+  padding-right: 3px;
 
   @media (min-width: $tablet-width) {
     @include tablet;
@@ -87,6 +88,12 @@
   }
 }
 
+.footer__contacts-br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
 .footer__map {
   width: 100%;
   height: 362px;
@@ -94,7 +101,7 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
-    margin-bottom: 58px;
+    margin-bottom: 42px;
   }
 }
 
@@ -124,13 +131,13 @@
   @media (min-width: $desktop-width) {
     @include desktop;
 
-    padding-bottom: 58px;
+    padding-bottom: 32px;
   }
 }
 
 .footer__logo {
   height: 24px;
-  margin-bottom: 52px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

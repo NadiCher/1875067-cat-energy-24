@@ -1,0 +1,9 @@
+.program__wrapper {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $color-border-divider;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+}

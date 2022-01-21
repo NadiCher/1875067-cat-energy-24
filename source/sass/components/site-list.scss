@@ -3,22 +3,28 @@
   display: flex;
   flex-direction: column;
   margin: 0;
+  margin-top: -1px;
   padding: 0;
+  border-top: 1px solid $color-border-divider;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     min-width: 440px;
     margin-top: auto;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     min-width: 478px;
+    margin-top: auto;
   }
 }
 
 .site-list__item a {
+  display: block;
+  padding: 23px 20px 22px;
   text-decoration: none;
   color: $color-text-dark;
   font-family: $font-link;
@@ -26,12 +32,16 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
+  text-align: center;
   text-transform: uppercase;
+  border-bottom: 1px solid $color-border-divider;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 1.33;
     font-weight: 400;
+    border: none;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
