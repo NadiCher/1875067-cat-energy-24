@@ -1,17 +1,21 @@
 .catalog-list {
   display: grid;
-  row-gap: 19px;
+  row-gap: 0;
   list-style-type: none;
-  margin: 0 0 36px;
+  margin: 0 0 25px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    @include tablet;
+
     grid-template-columns: 324px 324px;
     gap: 60px;
     margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
+    @include  desktop;
+
     grid-template-columns: 245px 245px 245px 245px;
     column-gap: 80px;
     row-gap: 63px;
@@ -19,24 +23,72 @@
   }
 }
 
+.catalog-list__br-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.catalog-list__br-tablet {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
 .catalog-list__item {
+  border-top: 1px solid $color-border-catalog;
+
+  &:last-child {
+    border-bottom: 1px solid $color-border-catalog;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.catalog-list__item-wrapper {
   display: grid;
-  row-gap: 13px;
-  padding: 11px 0 14px;
+  row-gap: 12px;
+  padding: 20px 0 23px;
+  min-height: 208px;
+
+  @media (max-width: $mobile-width-only) {
+    @include mobile;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 8px 36px 39px;
     row-gap: 33px;
+    background: linear-gradient($color-bg-light 0, $color-bg-light 81px, $color-bg-main 81px);
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 30px 40px 35px;
+    padding: 0 35px 40px 40px;
+  }
+}
+
+.catalog-list__item-wrapper--more {
+  display: block;
+  padding: 25px 0 22px;
+  min-height: 207px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 429px;
+    margin-top: 82px;
+    border: 2px solid $color-border-more;
+    background: $color-bg-light;
+    padding: 50px 0 38px;
   }
 }
 
 .catalog-list__link {
   display: grid;
-  row-gap: 18px;
+  row-gap: 12px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 41px 1fr;
   min-height: 112px;
@@ -45,13 +97,16 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 200px 67px 98px;
+    row-gap: 13px;
     justify-items: center;
     min-height: 391px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 400px;
+    min-height: 398px;
+    grid-template-rows: 196px 77px 95px;
+    row-gap: 15px;
   }
 }
 
@@ -61,6 +116,13 @@
 
   @media (min-width: $tablet-width) {
     grid-row: span 1;
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
   }
 }
 
@@ -76,6 +138,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.2;
+    text-align: center;
+    margin-top: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 1.05;
   }
 }
 
@@ -84,12 +152,27 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 1.33;
+  min-height: 43px;
+  border-spacing: 0;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     font-size: 16px;
     line-height: 1;
+    margin: 0;
   }
+}
+
+.catalog-list__table tr {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $color-border;
+    height: 32px;
+  }
+}
+
+.catalog-list__table td {
+  padding: 0;
 }
 
 .catalog-list__table-value {
@@ -105,6 +188,12 @@
   text-transform: uppercase;
   color: $color-text-second;
   margin: 0 0 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
 }
 
 .catalog-list__text-small {
@@ -112,5 +201,56 @@
   line-height: 1.33;
   text-align: center;
   color: $color-text-main;
-  margin: 0 0 21px;
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.12;
+    margin-bottom: 85px;
+  }
+}
+
+.catalog-list__text-big br,
+.catalog-list__text-small br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.catalog-list__button-more {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  padding: 0;
+  margin: 0 auto 24px;
+  background-color: $color-bg-light;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    background-color: $color-button-more;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      top: 30px;
+    }
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 49px;
+  }
 }

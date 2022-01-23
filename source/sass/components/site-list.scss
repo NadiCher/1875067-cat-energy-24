@@ -48,6 +48,11 @@
     font-size: 20px;
     line-height: 1.5;
     font-weight: 400;
+  }
+}
+
+.site-list--index .site-list__item a {
+  @media (min-width: $desktop-width) {
     color: $color-link-light;
     background-color: $color-bg-img;
   }
