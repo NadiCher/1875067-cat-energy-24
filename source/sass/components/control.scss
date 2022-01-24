@@ -71,7 +71,7 @@
 }
 
 .control__input[type="checkbox"]:checked + label::before {
-  background: url("../../img/checkbox.svg") 6px 7px no-repeat;
+  background: url("../img/checkbox.svg") 6px 7px no-repeat;
 
   @media (min-width: $tablet-width) {
     background-size: 24px 19px;

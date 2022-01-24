@@ -352,6 +352,7 @@
   color: $color-text-main;
   padding: 10px 10px 10px 15px;
   min-height: 150px;
+  resize: vertical;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -359,6 +360,12 @@
     padding: 10px 20px;
     min-height: 173px;
   }
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  opacity: 1;
+  color: $color-text-main;
 }
 
 .form__button-wrapper {
