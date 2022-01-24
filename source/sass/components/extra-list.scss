@@ -1,14 +1,13 @@
 .extra-list {
   list-style-type: none;
   padding: 0;
-  margin: 0 0 54px;
+  margin: 0 0 35px;
   display: grid;
-  row-gap: 32px;
+  row-gap: 0;
 
   @media (min-width: $tablet-width) {
-    row-gap: 0;
     border-top: 1px solid $color-border;
-    margin-bottom: 69px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +18,13 @@
 
 .extra-list__item {
   display: grid;
-  row-gap: 13px;
+  row-gap: 12px;
+  padding: 14px 0 19px;
+  border-top: 1px solid $color-border;
+
+  &:last-child {
+    border-bottom: 1px solid $color-border;
+  }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
