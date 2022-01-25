@@ -1,11 +1,30 @@
 .promo {
-  background-image: url("../img/background-cat-mobile.png"), linear-gradient($color-bg-img 0, $color-bg-img 302px, $color-bg-light 302px);
+  background-image: url("../img/index-background-mobile.png"), linear-gradient($color-bg-img 0, $color-bg-img 302px, $color-bg-light 302px);
   background-position: center top;
   background-repeat: no-repeat;
   color: $color-text-light;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.png"), linear-gradient($color-bg-img 0, $color-bg-img 302px, $color-bg-light 302px);
+    background-size: 320px auto;
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: $tablet-width) {
-    background: $color-bg-light;
+    background: url("../img/index-background-tablet.png"), $color-bg-light;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index-background-tablet@2x.png"), $color-bg-light;
+      background-size: 709px auto;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: none;
   }
 }
 
