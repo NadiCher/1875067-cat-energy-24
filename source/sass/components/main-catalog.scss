@@ -110,21 +110,41 @@
 
   position: relative;
   background-color: $color-bg-img;
-  background-image: url("../img/catalog/catalog-action.jpg");
+  background-image: url("../img/catalog/catalog-action-mobile.png");
   background-repeat: no-repeat;
+  background-size: 280px 290px;
   min-height: 290px;
   padding-top: 187px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/catalog-action-mobile@2x.png");
+    background-size: 280px 290px;
+  }
 
   @media (min-width: $tablet-width) {
     @include tablet;
 
     padding: 71px 120px 0 422px;
     min-height: 200px;
+    background-image: url("../img/catalog/catalog-action-tablet.png");
+    background-size: 707px 200px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/catalog-action-tablet@2x.png");
+      background-size: 707px 200px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 289px;
     padding: 185px 41px 0;
+    background-image: url("../img/catalog/catalog-action-desktop.png");
+    background-size: 245px 289px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/catalog-action-desktop@2x.png");
+      background-size: 245px 289px;
+    }
   }
 }
 

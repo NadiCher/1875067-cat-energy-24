@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="../manifest.webmanifest">
   </head>
   <body class="page-body">
     <!-- Header -->
-    <header class="header">
+    <header class="header header--index">
       <div class="header__logo-wrapper">
         <a class="header__logo">
           <img class="header__logo-image" src="img/logo/logo-mobile.png" width="34" height="38" alt="Кэт энерджи">
@@ -92,7 +96,7 @@
           </button>
         </div>
         <div class="navigation__wrapper">
-          <ul class="navigation__list site-list site-list--index">
+          <ul class="navigation__list navigation__list--index site-list site-list--index">
             <li class="site-list__item site-list__item--current">
               <a href="#">Главная</a>
             </li>
@@ -192,8 +196,14 @@
             </div>
           </div>
           <div class="example__slider slider">
-            <img class="slider__image" src="img/slider/cat-fat.png" width="280" height="232" alt="Было">
-            <img class="visually-hidden" src="img/slider/cat-skinny.png" width="243" height="232" alt="Стало">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slider/cat-fat-tablet.png 1x, img/slider/cat-fat-tablet@2x.png 2x">
+              <img class="slider__image" src="img/slider/cat-fat-mobile.png" srcset="img/slider/cat-fat-mobile@2x.png 2x" width="280" height="232" alt="Было">
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slider/cat-skinny-tablet.png 1x, img/slider/cat-skinny-tablet@2x.png 2x">
+              <img class="visually-hidden" src="img/slider/cat-skinny-mobile.png" srcset="img/slider/cat-skinny-mobile@2x.png 2x" width="243" height="232" alt="Стало">
+            </picture>
             <div class="slider__scale">
               <button class="slider__scale-button" type="button">Было</button>
               <label class="visually-hidden" for="slider-input">Выбрать положение</label>

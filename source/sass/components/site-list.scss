@@ -19,7 +19,12 @@
     flex-direction: row;
     min-width: 478px;
     margin-top: auto;
+    background-color: $color-bg-img;
   }
+}
+
+.site-list__item {
+  z-index: 2;
 }
 
 .site-list__item a {
@@ -54,6 +59,5 @@
 .site-list--index .site-list__item a {
   @media (min-width: $desktop-width) {
     color: $color-link-light;
-    background-color: $color-bg-img;
   }
 }

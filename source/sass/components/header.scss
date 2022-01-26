@@ -5,7 +5,6 @@
   align-items: center;
   padding: 11px 0 0;
   min-height: 63px;
-  z-index: 2;
 
   @media (min-width: $tablet-width) {
     @include tablet;
@@ -21,6 +20,33 @@
 
     min-height: 112px;
     padding: 0;
+  }
+}
+
+.header--index {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    background: linear-gradient(to right, $color-bg-light 0, $color-bg-light 50%, $color-bg-img 50%);
+  }
+}
+
+.header--index::after {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    background-image: url("../img/index-background-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 882px 694px;
+    width: 882px;
+    height: 694px;
+    top: 0;
+    right: -110px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.png");
+      background-repeat: no-repeat;
+      background-size: 882px 694px;
+    }
   }
 }
 
