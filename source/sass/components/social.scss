@@ -44,23 +44,55 @@
   }
 }
 
-.social__link--vkontakte .social__link-svg {
+.social__link--vkontakte svg {
+  width: 23px;
+  height: 13px;
+
   @media (min-width: $tablet-width) {
-    height: 22px;
-    width: 30px;
+    width: 29px;
+    height: 17px;
   }
 }
 
-.social__link--instagram .social__link-svg {
+.social__link--instagram svg {
+  width: 16px;
+  height: 16px;
+
   @media (min-width: $tablet-width) {
     height: 23px;
     width: 23px;
   }
 }
 
-.social__link--facebook .social__link-svg {
+.social__link--facebook svg {
+  stroke: $color-social-logo;
+  width: 12px;
+  height: 20px;
+
   @media (min-width: $tablet-width) {
-    height: 33px;
-    width: 28px;
+    width: 19px;
+    height: 31px;
   }
+}
+
+.social__link--vkontakte svg,
+.social__link--instagram svg {
+  fill: $color-social-logo;
+}
+
+.social__link:hover svg {
+  fill: $color-social-logo-hover;
+}
+
+.social__link--facebook:hover svg {
+  stroke: $color-social-logo-hover;
+}
+
+.social__link:active svg {
+  fill: $color-social-logo-hover;
+  opacity: 0.3;
+}
+
+.social__link--facebook:active svg {
+  stroke: $color-social-logo-hover;
 }

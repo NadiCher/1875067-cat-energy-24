@@ -241,6 +241,37 @@
     height: 52px;
     margin-left: 17px;
   }
+
+  &:hover {
+    border: 1px solid $color-border;
+  }
+
+  &:focus {
+    border: 2px solid $color-input-focus;
+    outline: none;
+    border-radius: 0;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border: 2px solid $color-input-invalid;
+    border-radius: 0;
+  }
+}
+
+.form__input:focus-within + .form__input-svg--phone {
+  fill: $color-icon-focus;
+}
+
+.form__input:focus-within + .form__input-svg--email {
+  stroke: $color-icon-focus;
+}
+
+.form__input:invalid:not(:placeholder-shown) + .form__input-svg--phone {
+  fill: $red;
+}
+
+.form__input:invalid:not(:placeholder-shown) + .form__input-svg--email {
+  stroke: $red;
 }
 
 .form__input::placeholder,
@@ -280,16 +311,29 @@
 
   @media (min-width: $tablet-width) {
     top: 19px;
-    right: 17px;
+    right: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 18px;
   }
 }
 
+.form__input-svg--email {
+  stroke: $special-dark-grey-2;
+}
+
 .form__input-svg--phone {
+  fill: $black;
   top: 13px;
   right: 13px;
 
   @media (min-width: $tablet-width) {
     top: 16px;
+    right: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
     right: 17px;
   }
 }

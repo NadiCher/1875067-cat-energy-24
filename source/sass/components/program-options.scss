@@ -166,30 +166,28 @@
   margin: 19px 0 0 -1px;
   position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 100px;
-    background-image: url("../../img/icon-arrow.png");
-    background-repeat: no-repeat;
-    background-size: 24px 12px;
-    width: 24px;
-    height: 12px;
-
-    @media (min-width: $tablet-width) {
-      top: 9px;
-      left: 133px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 9px;
-      left: 136px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.5;
   }
+}
+
+.program-options__link-arrow {
+  margin-left: 13px;
+  margin-bottom: 1px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 22px;
+    margin-bottom: 3px;
+  }
+}
+
+.program-options__link:hover .program-options__link-arrow {
+  @media (min-width: $tablet-width) {
+    width: 32px;
+  }
+}
+
+.program-options__link:active {
+  opacity: 0.3;
 }
