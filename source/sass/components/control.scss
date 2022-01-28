@@ -49,7 +49,6 @@
 
   @media (min-width: $tablet-width) {
     box-shadow: inset 0 0 0 10px $color-bg-light;
-
   }
 }
 
@@ -87,7 +86,7 @@
 .control__input:disabled + label {
   opacity: 0.3;
 
-  &:before {
+  &::before {
     border: 1px solid $color-border;
   }
 }
