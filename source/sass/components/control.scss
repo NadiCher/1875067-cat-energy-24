@@ -78,3 +78,15 @@
     background-position: 8px 11px;
   }
 }
+
+.control__input:hover + label::before {
+  border: 1px solid #bababa;
+}
+
+.control__input:disabled + label {
+  opacity: 0.3;
+
+  &::before {
+    border: 1px solid $color-border;
+  }
+}

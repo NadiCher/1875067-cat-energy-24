@@ -54,3 +54,15 @@
     width: 568px;
   }
 }
+
+.button:hover {
+  background-color: $color-button-hover;
+}
+
+.button--show-all:hover {
+  background-color: $special-grey-2;
+}
+
+.button:active span {
+  opacity: 0.3;
+}

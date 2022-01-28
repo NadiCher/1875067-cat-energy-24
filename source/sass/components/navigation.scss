@@ -81,6 +81,7 @@
   left: 0;
   width: 100%;
   background-color: $color-bg-light;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -103,6 +104,6 @@
 
 .navigation__list--index {
   @media (min-width: $desktop-width) {
-    background-color: $color-bg-img;
+    background-color: #64a73b;
   }
 }

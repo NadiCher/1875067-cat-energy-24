@@ -142,6 +142,14 @@
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__copyright {
@@ -154,10 +162,19 @@
   color: $color-link-second;
   font-size: 16px;
   line-height: 1.13;
+  fill: $color-social-logo;
 
   @media (min-width: $tablet-width) {
     width: 163px;
     height: 34px;
     padding: 0;
+  }
+
+  &:hover {
+    fill: $color-social-logo-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
