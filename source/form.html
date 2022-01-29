@@ -14,13 +14,15 @@
 
     <!-- Header -->
   <header class="header header--form">
-    <a class="header__logo-wrapper" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-        <img class="header__logo-image" src="img/logo/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
-      </picture>
-    </a>
+    <div class="header__logo-wrapper">
+      <a class="header__logo-link" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+          <img class="header__logo-image" src="img/logo/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
+        </picture>
+      </a>
+    </div>
     <nav class="navigation navigation--closed navigation--nojs">
       <div class="navigation__toggle-container">
         <button class="navigation__toggle" type="button">
@@ -103,13 +105,13 @@
         <!-- Contacts -->
         <div class="form__data-wrapper">
           <fieldset class="form__data form__data--contacts">
-            <legend class="form__legend">Контактные данные <br>(владельца кота)</legend>
+            <legend class="form__legend">Контактные данные&#32;<br>(владельца кота)</legend>
             <ul class="form__list form__list--contacts">
               <li class="form__item">
                 <label class="form__label">
                   E-mail:*
                   <input class="form__input" placeholder="kuklachev@gmail.com" type="email" name="email" required>
-                  <svg class="form__input-svg form__input-svg--email" width="19" height="14">
+                  <svg class="form__input-svg form__input-svg--email" width="19" height="14" viewBox="0 0 19 14">
                     <use xlink:href="img/sprite.svg#icon-email"></use>
                   </svg>
                 </label>
@@ -118,7 +120,7 @@
                 <label class="form__label">
                   Телефон:*
                   <input class="form__input" placeholder="8 (960) 900-60-90" type="tel" name="phone" required>
-                  <svg class="form__input-svg form__input-svg--phone" width="20" height="21">
+                  <svg class="form__input-svg form__input-svg--phone" width="20" height="21" viewBox="0 0 20 21">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
                 </label>
@@ -186,28 +188,28 @@
         </div>
         <div class="footer__bottom">
           <a class="footer__logo" href="index.html">
-            <svg class="footer__logo-image" width="128" height="24">
+            <svg class="footer__logo-image" width="128" height="24" viewBox="0 0 101 18">
               <use xlink:href="img/sprite.svg#footer-logo"></use>
             </svg>
           </a>
           <ul class="footer__social social">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="#">
-                <svg width="23" height="16">
+                <svg width="23" height="13" viewBox="0 0 23 13">
                   <use xlink:href="img/sprite.svg#logo-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--instagram" href="#">
-                <svg width="16" height="16">
+                <svg width="16" height="16" viewBox="0 0 16 16">
                   <use xlink:href="img/sprite.svg#logo-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
-                <svg width="28" height="33">
+                <svg width="13" height="20" viewBox="0 0 13 20">
                   <use xlink:href="img/sprite.svg#logo-facebook"></use>
                 </svg>
               </a>
@@ -215,7 +217,7 @@
           </ul>
           <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
-            <svg width="27" height="34">
+            <svg width="27" height="34" viewBox="0 0 27 34">
               <use xlink:href="img/sprite.svg#logo-html"></use>
             </svg>
           </a>
