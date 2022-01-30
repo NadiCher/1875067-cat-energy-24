@@ -33,8 +33,15 @@
 .header__logo-wrapper {
   @include mobile;
 
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+}
+
+.header__logo-link {
+  display: block;
   height: 38px;
-  margin-right: auto;
+  width: 191px;
   padding-bottom: 16px;
   flex-shrink: 0;
 
