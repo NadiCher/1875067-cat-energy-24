@@ -20,8 +20,15 @@
     @include desktop;
 
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 80px;
     margin-bottom: 71px;
+  }
+}
+
+.program-options li {
+  @media (min-width: $desktop-width) {
+    width: 570px;
   }
 }
 
