@@ -88,6 +88,10 @@
   }
 }
 
+.site-list__item--last a {
+  border-bottom: none;
+}
+
 .site-list--index .site-list__item a {
   @media (min-width: $desktop-width) {
     color: $color-link-light;
