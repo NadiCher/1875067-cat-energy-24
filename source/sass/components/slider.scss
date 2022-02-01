@@ -10,16 +10,70 @@
   }
 }
 
-.slider__image {
+.slider__container {
+  display: flex;
+  width: 280px;
+  height: 232px;
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     width: 592px;
     height: 511px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 12px;
+  }
+}
+
+.slider__image-before {
+  background-image: url("../img/slider/cat-fat-mobile.png");
+  background-size: 280px 232px;
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 232px;
+  overflow: hidden;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/slider/cat-fat-mobile@2x.png");
+    background-size: 280px 232px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/slider/cat-fat-tablet.png");
+    background-size: 592px 511px;
+    height: 511px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider/cat-fat-tablet@2x.png");
+      background-size: 592px 511px;
+    }
+  }
+}
+
+.slider__image-after {
+  background-image: url("../img/slider/cat-skinny-mobile.png");
+  background-size: 280px 232px;
+  background-position: right;
+  width: 50%;
+  height: 232px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/slider/cat-skinny-mobile@2x.png");
+    background-size: 280px 232px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/slider/cat-skinny-tablet.png");
+    background-size: 592px 511px;
+    height: 511px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider/cat-skinny-tablet@2x.png");
+      background-size: 592px 511px;
+    }
   }
 }
 
@@ -28,8 +82,11 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-top: 14px;
+    width: 592px;
     height: 40px;
+    justify-content: space-between;
+    margin-top: 14px;
+    padding: 0 10px;
   }
 }
 
@@ -50,13 +107,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.5;
-    margin: 0 21px 2px 26px;
-  }
-
-  @media (min-width: $desktop-width) {
-    &:nth-child(1) {
-      margin-left: 13px;
-    }
+    margin: 0 0 2px 0;
   }
 
   &::before {
@@ -115,8 +166,8 @@
 
     @media (min-width: $tablet-width) {
       background-color: $color-bg-img;
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       margin-top: -14px;
       border-radius: 50%;
       border: 12px solid $color-bg-light;
@@ -151,7 +202,7 @@
     cursor: pointer;
     width: 4px;
     height: 4px;
-    border-radius: 6px;
+    border-radius: 4px;
     border-color: $color-bg-img;
     box-shadow: -80px 0 0 78px $color-bg-img;
 
@@ -177,11 +228,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 426px;
+    width: 436px;
     height: 40px;
     outline: none;
     border: none;
     background-color: $color-bg-example;
-    margin: 0;
+    margin: 3px 0 0;
+    padding: 0 5px 5px;
   }
 }

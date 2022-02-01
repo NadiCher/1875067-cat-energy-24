@@ -247,13 +247,14 @@
   }
 
   &:focus {
-    border: 2px solid $color-input-focus;
-    outline: none;
+    outline: 2px solid $color-input-focus;
+    outline-offset: -2px;
     border-radius: 0;
   }
 
   &:invalid:not(:placeholder-shown) {
-    border: 2px solid $color-input-invalid;
+    outline: 2px solid $color-input-invalid;
+    outline-offset: -2px;
     border-radius: 0;
   }
 }
@@ -404,6 +405,11 @@
     padding: 10px 20px;
     min-height: 173px;
   }
+}
+
+.form__textarea:focus-within {
+  border-radius: 0;
+  outline: 2px solid $color-input-focus;
 }
 
 .form__input::placeholder,
