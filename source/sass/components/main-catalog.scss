@@ -49,7 +49,7 @@
   position: absolute;
   content: "";
   border-top: 2px solid $color-bg-img;
-  top: 15px;
+  top: 13px;
   right: 0;
   width: 100%;
   z-index: -1;
@@ -59,7 +59,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 23px;
+    top: 24px;
   }
 }
 
@@ -89,7 +89,7 @@
   font-size: 24px;
   line-height: 1;
   color: $color-title-main;
-  margin: 0 0 35px -22px;
+  margin: 0 0 33px -22px;
   padding: 0 22px;
   background-color: $color-bg-light;
 

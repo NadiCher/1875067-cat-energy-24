@@ -14,14 +14,11 @@
   background-color: $color-button-bg;
 }
 
-.button--show-all {
-  color: $color-button-second-text;
-  background-color: $color-button-second-bg;
+.button--catalog {
   text-decoration: none;
   text-align: center;
-}
+  margin-top: auto;
 
-.button--catalog {
   @media (min-width: $tablet-width) {
     width: 248px;
   }
@@ -31,7 +28,18 @@
   }
 }
 
+.button--show-all {
+  color: $color-button-second-text;
+  background-color: $color-button-second-bg;
+  text-decoration: none;
+  text-align: center;
+  margin-top: auto;
+}
+
 .button--extra {
+  text-decoration: none;
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     width: 632px;
     grid-column: span 2;

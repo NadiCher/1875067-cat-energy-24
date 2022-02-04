@@ -207,7 +207,7 @@
 
 .form__data--program .form__item,
 .form__data--extra .form__item {
-  height: 30px;
+  min-height: 30px;
 
   @media (min-width: $tablet-width) {
     min-height: 40px;
