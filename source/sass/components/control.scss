@@ -1,5 +1,6 @@
 .control {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   position: relative;
 }
@@ -35,6 +36,7 @@
     height: 30px;
     border: 1px solid $color-border;
     border-radius: 50%;
+    flex-shrink: 0;
 
     @media (min-width: $tablet-width) {
       width: 40px;
@@ -67,6 +69,7 @@
     width: 30px;
     height: 30px;
     border: 1px solid $color-border;
+    flex-shrink: 0;
 
     @media (min-width: $tablet-width) {
       width: 40px;

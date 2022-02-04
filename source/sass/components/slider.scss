@@ -237,3 +237,13 @@
     padding: 0 5px 5px;
   }
 }
+
+.slider__scale-input:focus-within::-webkit-slider-thumb {
+  box-shadow: 0 2px 4px 0 #00000033;
+  outline: 1px solid $color-button-bg;
+}
+
+.slider__scale-input:focus-within::-moz-range-thumb {
+  box-shadow: 0 2px 4px 0 #00000033;
+  outline: 1px solid $color-button-bg;
+}
